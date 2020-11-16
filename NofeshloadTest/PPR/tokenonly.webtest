@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="tokenonly" Id="3a89ec55-be41-43c7-a737-ae6bf73311e0" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.b32238f9-6ceb-470c-969d-1e9c433ed5bf.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <IncludedWebTest Name="NofeshloadTest.TlvirgunovdimTestCoded" Path="bin\debug\nofeshloadtest.dll" Id="ad2adeb3-f895-9390-3ef2-65713b0f8dc7" IsCodedWebTest="True" InheritWebTestSettings="False" />
+    <IncludedWebTest Name="NofeshloadTest.tokenTestCoded" Path="bin\debug\nofeshloadtest.dll" Id="8b6e8175-50d4-3f50-641a-9d7cfb907797" IsCodedWebTest="True" InheritWebTestSettings="False" />
+  </Items>
+  <DataSources>
+    <DataSource Name="dataNofesh" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\dataNofashim.txt">
+      <Tables>
+        <DataSourceTable Name="dataNofashim#txt" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Sequential" />
+      </Tables>
+    </DataSource>
+  </DataSources>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

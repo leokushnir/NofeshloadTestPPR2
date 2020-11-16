@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="WebTest1" Id="12793a80-3440-4845-9bd8-ab53a21b01b4" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.b32238f9-6ceb-470c-969d-1e9c433ed5bf.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <IncludedWebTest Name="NofeshloadTest.TlvirgunovdimTestCoded" Path="..\bin\debug\nofeshloadtest.dll" Id="ad2adeb3-f895-9390-3ef2-65713b0f8dc7" IsCodedWebTest="True" InheritWebTestSettings="False" />
+    <Request Method="GET" Guid="8a8e516e-1f69-45dc-ac2b-616a3455af5e" Version="1.1" Url="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/blender.regular.c12c7a5e41bd0dddcf82.eot" ThinkTime="44" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="76151128-885b-49d5-8c8c-53c58932c958" Version="1.1" Url="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.eot" ThinkTime="27" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <IncludedWebTest Name="NofeshloadTest.tokenTestCoded" Path="bin\debug\nofeshloadtest.dll" Id="8b6e8175-50d4-3f50-641a-9d7cfb907797" IsCodedWebTest="True" InheritWebTestSettings="False" />
+    <Request Method="GET" Guid="a85204bc-f4d8-4f12-a209-95288b6ec15b" Version="1.1" Url="https://pre-www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/getAllNofashim" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/json" />
+        <Header Name="Pragma" Value="no-cache" />
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+        <Header Name="Authorization" Value="Bearer {{access_token}}" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="9a0911e1-8fe5-4cc0-a787-9bf0a77946c7" Version="1.1" Url="https://pre-www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/GetUserSelectedNofesh" ThinkTime="6" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/json" />
+        <Header Name="Pragma" Value="no-cache" />
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+        <Header Name="Authorization" Value="Bearer {{access_token}}" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="id_nofesh" Value="{{dataNofesh.dataNofashim#txt.nofeshId}}" RecordedValue="8" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="9a0911e1-8fe5-4cc0-a787-9bf0a77946c7" Version="1.1" Url="https://pre-www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/GetNofshonNirshamim" ThinkTime="6" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/json" />
+        <Header Name="Pragma" Value="no-cache" />
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+        <Header Name="Authorization" Value="Bearer {{access_token}}" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="nofeshId" Value="{{dataNofesh.dataNofashim#txt.nofeshId}}" RecordedValue="8" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="9a0911e1-8fe5-4cc0-a787-9bf0a77946c7" Version="1.1" Url="https://pre-www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/GetNofeshPrices" ThinkTime="6" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/json" />
+        <Header Name="Pragma" Value="no-cache" />
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+        <Header Name="Authorization" Value="Bearer {{access_token}}" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="id_nofesh" Value="{{dataNofesh.dataNofashim#txt.nofeshId}}" RecordedValue="8" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="806bc51f-84f0-427a-825d-816f1b506879" Version="1.1" Url="https://pre-www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/SaveNofshonReservation" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Pragma" Value="no-cache" />
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+        <Header Name="Authorization" Value="Bearer {{access_token}}" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="True">ewAiAG0AcwBfAGEAbQBpAHQAaQBtACIAOgAxACwAIgBtAHMAXwBuAGkAbAB2AGkAbQAiADoAMAAsACIAbQBzAF8AdABpAG4AbwBrAG8AdAAiADoAMAAsACIAbQBzAF8AeQBlAGwAYQBkAGkAbQAiADoAMAAsACIAbgBvAGYAZQBzAGgAXwBpAGQAIgA6ACIAOAAiACwAIgBpAHMARABlAGwAZQB0AE0AZQBrAGEAcwBoAGUAcgBlAHQAIgA6AGYAYQBsAHMAZQAsACIAaQBzAFAAcgBlAG0AaQB1AG0AUgBvAG8AbQAiADoAZgBhAGwAcwBlACwAIgBpAHMARgBhAG0AaQBsAHkAUgBvAG8AbQAyAEsAaQBkAHMAIgA6AGYAYQBsAHMAZQAsACIAaQBzAEYAYQBtAGkAbAB5AFIAbwBvAG0AMwBLAGkAZABzACIAOgBmAGEAbABzAGUALAAiAGkAcwBUAHcAbwBLAGkAZABzAFMAZQBwAGUAcgBhAHQAZQBSAG8AbwBtACIAOgBmAGEAbABzAGUALAAiAGkAcwBUAGgAcgBlAGUASwBpAGQAcwBTAGUAcABlAHIAYQB0AGUAUgBvAG8AbQAiADoAZgBhAGwAcwBlAH0A</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="ef9e29ee-7ee1-4551-8739-c7921da08f9e" Version="1.1" Url="https://pre-www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/getNofshonPayment" ThinkTime="4" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/json" />
+        <Header Name="Pragma" Value="no-cache" />
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+        <Header Name="Authorization" Value="Bearer {{access_token}}" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="id_nofesh" Value="{{dataNofesh.dataNofashim#txt.nofeshId}}" RecordedValue="8" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="44a26cb7-6694-45ec-b533-d1fb4a6dd324" Version="1.1" Url="https://pre-www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/GetNirshamDetails" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/json" />
+        <Header Name="Pragma" Value="no-cache" />
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+        <Header Name="Authorization" Value="Bearer {{access_token}}" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="msZehut" Value="{{dataNofesh.dataNofashim#txt.user}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <IncludedWebTest Name="NofeshloadTest.SaveNofshonNirshamimCoded" Path="..\bin\debug\nofeshloadtest.dll" Id="a706238c-f9fe-91f6-dc99-cb1ebf00fe70" IsCodedWebTest="True" InheritWebTestSettings="False" />
+    <Request Method="GET" Guid="d7a45122-1184-4150-bd77-8db0d3a31b43" Version="1.1" Url="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot" ThinkTime="15" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+        <Header Name="Authorization" Value="Bearer {{access_token}}" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="ef9e29ee-7ee1-4551-8739-c7921da08f9e" Version="1.1" Url="https://pre-www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/getNofshonPayment" ThinkTime="4" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/json" />
+        <Header Name="Pragma" Value="no-cache" />
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+        <Header Name="Authorization" Value="Bearer {{access_token}}" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="id_nofesh" Value="{{dataNofesh.dataNofashim#txt.nofeshId}}" RecordedValue="8" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+  </Items>
+  <DataSources>
+    <DataSource Name="dataNofesh" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\dataNofashim.txt">
+      <Tables>
+        <DataSourceTable Name="dataNofashim#txt" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Sequential" />
+      </Tables>
+    </DataSource>
+  </DataSources>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
