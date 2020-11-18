@@ -62,6 +62,7 @@
     <Compile Include="PPR\tokenTestCoded.cs" />
     <Compile Include="SaveNofeshNirshamimCoded.cs" />
     <Compile Include="SaveNofshonNirshamimCoded.cs" />
+    <Compile Include="PPR\SaveNofshonReservationNofeshPnimCoded.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PPR\all1.webtest">
@@ -70,6 +71,7 @@
     <None Include="PPR\SaveNofshonNirshamim.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="PPR\SaveNofshonReservationNofeshPnim.webtest" />
     <None Include="PPR\tokenonly.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

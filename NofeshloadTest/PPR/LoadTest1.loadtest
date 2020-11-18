@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LoadTest Name="LoadTest1" Description="" Owner="" storage="c:\testprojects\nofeshloadtestppr\nofeshloadtest\ppr\loadtest1.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Run Settings1" Id="fe403a25-0cad-4fa5-8726-01bf5b856bfc" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<LoadTest Name="LoadTest1" Description="" Owner="" storage="c:\testprojects\nofeshloadtestppr2\nofeshloadtest\ppr\loadtest1.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Run Settings1" Id="fe403a25-0cad-4fa5-8726-01bf5b856bfc" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Scenarios>
-    <Scenario Name="Scenario1" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
+    <Scenario Name="Scenario1" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="true" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0.2" Pattern="Off" />
-      <LoadProfile Pattern="Constant" InitialUsers="10" />
+      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="200" StepUsers="20" StepDuration="10" StepRampTime="0" />
       <TestMix>
         <TestProfile Name="WebTest1" Path="webtest1.webtest" Id="12793a80-3440-4845-9bd8-ab53a21b01b4" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>

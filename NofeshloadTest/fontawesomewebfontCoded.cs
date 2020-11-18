@@ -21,7 +21,7 @@ namespace NofeshloadTest {
     public class fontawesomewebfontCoded : WebTest {
         
         public fontawesomewebfontCoded() {
-            this.Context.Add("Server", "https://pre-www5.tel-aviv.gov.il");
+            this.Context.Add("Server", "https://www5.tel-aviv.gov.il");
             this.PreAuthenticate = true;
             this.Proxy = "default";
         }
@@ -41,7 +41,7 @@ namespace NofeshloadTest {
             WebTestRequest request1 = new WebTestRequest("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfo" +
                     "nt.eot");
             request1.ThinkTime = 27;
-            request1.Headers.Add(new WebTestRequestHeader("Referer", "https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/"));
+            request1.Headers.Add(new WebTestRequestHeader("Referer", "https://www5.tel-aviv.gov.il/Tlvirgunovdim/"));
             request1.QueryStringParameters.Add("", "", false, false);
             yield return request1;
             request1 = null;

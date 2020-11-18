@@ -47,7 +47,7 @@ namespace NofeshloadTest
             }
 
 
-            //https://pre-www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/token
+            //https://www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/token
 
             var tokenUrl = this.Context["Server"].ToString() + "/tlvservices/tlvirgunovdim/token";
             var refererUrl = this.Context["Server"].ToString() + "/Tlvirgunovdim/";

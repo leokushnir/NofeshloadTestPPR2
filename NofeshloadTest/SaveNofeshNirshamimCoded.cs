@@ -24,7 +24,7 @@ namespace NofeshloadTest
 
         public SaveNofeshNirshamimCoded()
         {
-            this.Context.Add("Server", "https://pre-www5.tel-aviv.gov.il");
+            this.Context.Add("Server", "https://www5.tel-aviv.gov.il");
             this.PreAuthenticate = true;
             this.Proxy = "default";
         }
@@ -44,12 +44,12 @@ namespace NofeshloadTest
                 this.ValidateResponseOnPageComplete += new EventHandler<ValidationEventArgs>(validationRule2.Validate);
             }
 
-            WebTestRequest request1 = new WebTestRequest("https://pre-www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/SaveNofeshNirsh" +
+            WebTestRequest request1 = new WebTestRequest("https://www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/SaveNofeshNirsh" +
                     "amim");
             request1.Method = "POST";
             request1.Headers.Add(new WebTestRequestHeader("Pragma", "no-cache"));
             request1.Headers.Add(new WebTestRequestHeader("Accept", "application/json, text/plain, */*"));
-            request1.Headers.Add(new WebTestRequestHeader("Referer", "https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/"));
+            request1.Headers.Add(new WebTestRequestHeader("Referer", "https://www5.tel-aviv.gov.il/Tlvirgunovdim/"));
             request1.Headers.Add(new WebTestRequestHeader("Authorization", ("Bearer " + this.Context["access_token"].ToString())));
             StringHttpBody request1Body = new StringHttpBody();
             request1Body.ContentType = "application/json";

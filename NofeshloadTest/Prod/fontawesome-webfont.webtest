@@ -3,7 +3,7 @@
   <Items>
     <Request Method="GET" Guid="76151128-885b-49d5-8c8c-53c58932c958" Version="1.1" Url="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.eot" ThinkTime="27" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
       <Headers>
-        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+        <Header Name="Referer" Value="https://www5.tel-aviv.gov.il/Tlvirgunovdim/" />
       </Headers>
       <QueryStringParameters>
         <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
@@ -18,7 +18,7 @@
     </DataSource>
   </DataSources>
   <ContextParameters>
-    <ContextParameter Name="Server" Value="https://pre-www5.tel-aviv.gov.il" />
+    <ContextParameter Name="Server" Value="https://www5.tel-aviv.gov.il" />
   </ContextParameters>
   <ValidationRules>
     <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />

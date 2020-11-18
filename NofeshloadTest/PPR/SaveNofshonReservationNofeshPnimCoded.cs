@@ -10,20 +10,18 @@
 
 namespace NofeshloadTest
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
     using Microsoft.VisualStudio.TestTools.WebTesting;
     using Microsoft.VisualStudio.TestTools.WebTesting.Rules;
+    using System;
+    using System.Collections.Generic;
 
 
     [DeploymentItem("nofeshloadtest\\dataNofashim.txt")]
     [DataSource("dataNofesh", "Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\dataNofashim.txt", Microsoft.VisualStudio.TestTools.WebTesting.DataBindingAccessMethod.Sequential, Microsoft.VisualStudio.TestTools.WebTesting.DataBindingSelectColumns.SelectOnlyBoundColumns, "dataNofashim#txt")]
-    [DataBinding("dataNofesh", "dataNofashim#txt", "user", "dataNofesh.dataNofashim#txt.user")]
-    public class SaveNofshonNirshamimCoded : WebTest
+    public class SaveNofshonReservationNofeshPnimCoded : WebTest
     {
 
-        public SaveNofshonNirshamimCoded()
+        public SaveNofshonReservationNofeshPnimCoded()
         {
             this.PreAuthenticate = true;
             this.Proxy = "default";
@@ -45,18 +43,24 @@ namespace NofeshloadTest
             }
 
             WebTestRequest request1 = new WebTestRequest("https://www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/SaveNofshon" +
-                    "Nirshamim");
+                    "ReservationNofeshPnim");
             request1.Method = "POST";
             request1.Headers.Add(new WebTestRequestHeader("Pragma", "no-cache"));
             request1.Headers.Add(new WebTestRequestHeader("Accept", "application/json, text/plain, */*"));
             request1.Headers.Add(new WebTestRequestHeader("Referer", "https://www5.tel-aviv.gov.il/Tlvirgunovdim/"));
             request1.Headers.Add(new WebTestRequestHeader("Authorization", ("Bearer " + this.Context["access_token"].ToString())));
-
             StringHttpBody request1Body = new StringHttpBody();
             request1Body.ContentType = "application/json";
-            request1Body.InsertByteOrderMark = false;
-            request1Body.BodyString = @"{""nirshamim"":[{""ms_zehut_mazmin"":3169,""ms_zehut"":28426187,""tr_leida"":""1971-08-01T00:00:00.000Z"",""shem_prati"":""יניב"",""shem_mishpacha"":""אליעב"",""gender"":2,""header"":""דוקטו"",""ms_cheder"":2,""is_amit"":1,""is_nilve"":0,""is_yeled"":0,""is_tinok"":0,""id_nofesh"":1,""nofesh_type"":3,""phone"":""0542236445"",""ms_darkon"":null,""tr_tokef_darkon"":"""",""shem_prati_loazi"":null,""shem_mishpacha_loazi"":null}]}";
-            request1Body.BodyString.Replace("28426187", this.Context["dataNofesh.dataNofashim#txt.user"].ToString());
+            request1Body.InsertByteOrderMark = true;
+
+            var bs = "{\"nofesh_id\":ID, \"ms_zehut_mazmin\":TZ, \"ms_amitim\":1, \"ms_nilvim\":0, \"ms_yeladim\"" +
+            ":0, \"ms_tinokot\":0, \"isTwoKidsSeperateRoom\":false, \"isFamilyRoom\":false, \"isThre" +
+            "eKidsSeperateRoom\":false,\"ms_chadarim\":1, \"mechir_le_nofesh\":0}";
+            bs = bs.Replace("ID", this.Context["dataNofesh.dataNofashim#txt.nofeshId"].ToString());
+            bs = bs.Replace("TZ", this.Context["dataNofesh.dataNofashim#txt.user"].ToString());
+
+
+            request1Body.BodyString = bs;
             request1.Body = request1Body;
             yield return request1;
             request1 = null;

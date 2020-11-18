@@ -66,7 +66,7 @@
     </DataSource>
   </DataSources>
   <ContextParameters>
-    <ContextParameter Name="Server" Value="https://pre-www5.tel-aviv.gov.il" />
+    <ContextParameter Name="Server" Value="https://www5.tel-aviv.gov.il" />
     <ContextParameter Name="CDNServer" Value="https://maxcdn.bootstrapcdn.com" />
   </ContextParameters>
   <ValidationRules>

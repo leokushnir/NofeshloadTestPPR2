@@ -24,7 +24,7 @@ namespace NofeshloadTest
 
         public EnterSiteCoded()
         {
-            this.Context.Add("Server", "https://pre-www5.tel-aviv.gov.il");
+            this.Context.Add("Server", "https://www5.tel-aviv.gov.il");
             this.Context.Add("CDNServer", "https://maxcdn.bootstrapcdn.com");
             this.PreAuthenticate = true;
             this.Proxy = "default";

@@ -2,9 +2,9 @@
 <WebTest Name="WebProdLogin1 - Copy" Id="6a1a2694-860a-416c-aea5-bd51f8e048a4" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebProd.b32238f9-6ceb-470c-969d-1e9c433ed5bf.rec.webtestresult" ResultsLocale="">
   <Items>
     <IncludedWebTest Name="NofeshloadTest.TlvirgunovdimHomeCoded" Path="bin\debug\nofeshloadtest.dll" Id="cba61702-a1d9-e5f4-508b-73ed53026adb" IsCodedWebTest="True" InheritWebTestSettings="False" />
-    <Request Method="GET" Guid="8a8e516e-1f69-45dc-ac2b-616a3455af5e" Version="1.1" Url="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/blender.regular.c12c7a5e41bd0dddcf82.eot" ThinkTime="5" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+    <Request Method="GET" Guid="8a8e516e-1f69-45dc-ac2b-616a3455af5e" Version="1.1" Url="https://www5.tel-aviv.gov.il/Tlvirgunovdim/blender.regular.c12c7a5e41bd0dddcf82.eot" ThinkTime="5" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
       <Headers>
-        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+        <Header Name="Referer" Value="https://www5.tel-aviv.gov.il/Tlvirgunovdim/" />
       </Headers>
       <QueryStringParameters>
         <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
@@ -12,28 +12,28 @@
     </Request>
     <Request Method="GET" Guid="76151128-885b-49d5-8c8c-53c58932c958" Version="1.1" Url="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.eot" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
       <Headers>
-        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+        <Header Name="Referer" Value="https://www5.tel-aviv.gov.il/Tlvirgunovdim/" />
       </Headers>
       <QueryStringParameters>
         <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
       </QueryStringParameters>
     </Request>
     <IncludedWebTest Name="NofeshloadTest.tokenProdCoded" Path="bin\debug\nofeshloadtest.dll" Id="5ed2c36e-1f75-1841-48fc-44bee4bbebd8" IsCodedWebTest="True" InheritWebTestSettings="False" />
-    <Request Method="GET" Guid="a85204bc-f4d8-4f12-a209-95288b6ec15b" Version="1.1" Url="https://pre-www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/getAllNofashim" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+    <Request Method="GET" Guid="a85204bc-f4d8-4f12-a209-95288b6ec15b" Version="1.1" Url="https://www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/getAllNofashim" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
       <Headers>
         <Header Name="Content-Type" Value="application/json" />
         <Header Name="Pragma" Value="no-cache" />
         <Header Name="Accept" Value="application/json, text/plain, */*" />
-        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+        <Header Name="Referer" Value="https://www5.tel-aviv.gov.il/Tlvirgunovdim/" />
         <Header Name="Authorization" Value="Bearer {{access_token}}" />
       </Headers>
     </Request>
-    <Request Method="GET" Guid="44a26cb7-6694-45ec-b533-d1fb4a6dd324" Version="1.1" Url="https://pre-www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/GetUserSelectedNofesh" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+    <Request Method="GET" Guid="44a26cb7-6694-45ec-b533-d1fb4a6dd324" Version="1.1" Url="https://www5.tel-aviv.gov.il/tlvservices/tlvirgunovdim/api/Nofesh/GetUserSelectedNofesh" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
       <Headers>
         <Header Name="Content-Type" Value="application/json" />
         <Header Name="Pragma" Value="no-cache" />
         <Header Name="Accept" Value="application/json, text/plain, */*" />
-        <Header Name="Referer" Value="https://pre-www5.tel-aviv.gov.il/Tlvirgunovdim/" />
+        <Header Name="Referer" Value="https://www5.tel-aviv.gov.il/Tlvirgunovdim/" />
         <Header Name="Authorization" Value="Bearer {{access_token}}" />
       </Headers>
     </Request>
@@ -46,7 +46,7 @@
     </DataSource>
   </DataSources>
   <ContextParameters>
-    <ContextParameter Name="Server" Value="https://pre-www5.tel-aviv.gov.il" />
+    <ContextParameter Name="Server" Value="https://www5.tel-aviv.gov.il" />
   </ContextParameters>
   <ValidationRules>
     <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
