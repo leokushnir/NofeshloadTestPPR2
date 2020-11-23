@@ -3,7 +3,7 @@
   <Scenarios>
     <Scenario Name="Scenario1" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="true" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0.2" Pattern="Off" />
-      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="200" StepUsers="20" StepDuration="10" StepRampTime="0" />
+      <LoadProfile Pattern="Step" InitialUsers="1" MaxUsers="10" StepUsers="1" StepDuration="10" StepRampTime="0" />
       <TestMix>
         <TestProfile Name="WebTest1" Path="webtest1.webtest" Id="12793a80-3440-4845-9bd8-ab53a21b01b4" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>

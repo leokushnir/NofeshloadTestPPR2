@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LoadTest Name="LoadProd" Description="" Owner="" storage="c:\testprojects\nofeshloadtestppr\nofeshloadtest\prod\loadprod.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Run Settings1" Id="3c5b2851-a4d4-449c-be0b-25658a25c02a" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<LoadTest Name="LoadProd" Description="" Owner="" storage="c:\testprojects\nofeshloadtestppr2\nofeshloadtest\prod\loadprod.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Run Settings1" Id="3c5b2851-a4d4-449c-be0b-25658a25c02a" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Scenarios>
-    <Scenario Name="Scenario1" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
-      <ThinkProfile Value="0.2" Pattern="NormalDistribution" />
-      <LoadProfile Pattern="Constant" InitialUsers="110" />
+    <Scenario Name="Scenario1" DelayBetweenIterations="1" PercentNewUsers="100" IPSwitching="true" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
+      <ThinkProfile Value="0.2" Pattern="On" />
+      <LoadProfile Pattern="Step" InitialUsers="1" MaxUsers="50" StepUsers="1" StepDuration="30" StepRampTime="0" />
       <TestMix>
         <TestProfile Name="WebProdLogin1 - Copy" Path="webprodlogin1 - copy.webtest" Id="6a1a2694-860a-416c-aea5-bd51f8e048a4" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>

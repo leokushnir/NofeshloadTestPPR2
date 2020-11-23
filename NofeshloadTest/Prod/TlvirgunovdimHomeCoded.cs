@@ -42,9 +42,9 @@ namespace NofeshloadTest
                 this.ValidateResponseOnPageComplete += new EventHandler<ValidationEventArgs>(validationRule2.Validate);
             }
 
-            WebTestRequest request1 = new WebTestRequest("https://www5.tel-aviv.gov.il/Tlvirgunovdim/#/nofesh");
-            request1.Url = "https://www5.tel-aviv.gov.il/Tlvirgunovdim/#/nofesh";
-            request1.ExpectedResponseUrl = "https://www5.tel-aviv.gov.il/Tlvirgunovdim/#/nofesh/";
+            WebTestRequest request1 = new WebTestRequest("https://www5.tel-aviv.gov.il/Tlvirgunovdim/#/login");
+            request1.Url = "https://www5.tel-aviv.gov.il/Tlvirgunovdim/#/login";
+            request1.ExpectedResponseUrl = "https://www5.tel-aviv.gov.il/Tlvirgunovdim/#/login/";
             yield return request1;
             request1 = null;
         }

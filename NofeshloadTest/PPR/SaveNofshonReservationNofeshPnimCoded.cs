@@ -56,7 +56,7 @@ namespace NofeshloadTest
             var bs = "{\"nofesh_id\":ID, \"ms_zehut_mazmin\":TZ, \"ms_amitim\":1, \"ms_nilvim\":0, \"ms_yeladim\"" +
             ":0, \"ms_tinokot\":0, \"isTwoKidsSeperateRoom\":false, \"isFamilyRoom\":false, \"isThre" +
             "eKidsSeperateRoom\":false,\"ms_chadarim\":1, \"mechir_le_nofesh\":0}";
-            bs = bs.Replace("ID", this.Context["dataNofesh.dataNofashim#txt.nofeshId"].ToString());
+            bs = bs.Replace("ID", this.Context["dataNofesh.dataNofashim#txt.id_nofesh"].ToString());
             bs = bs.Replace("TZ", this.Context["dataNofesh.dataNofashim#txt.user"].ToString());
 
 

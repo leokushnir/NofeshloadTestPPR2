@@ -1,4 +1,4 @@
-user,encryptedUser,birth,nofeshId
+user,encryptedUser,birth,id_nofesh
 27296870,11/07/1908,29/04/1974,8
 27301324,12/07/1908,03/04/1974,8
 27303312,13/07/1908,17/04/1974,8

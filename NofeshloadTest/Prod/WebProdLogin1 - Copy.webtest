@@ -39,7 +39,7 @@
     </Request>
   </Items>
   <DataSources>
-    <DataSource Name="dataNofesh" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\dataNofashim.txt">
+    <DataSource Name="dataNofesh" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\dataNofashim.txt">
       <Tables>
         <DataSourceTable Name="dataNofashim#txt" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Sequential" />
       </Tables>

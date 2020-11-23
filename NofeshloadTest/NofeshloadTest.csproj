@@ -65,6 +65,9 @@
     <Compile Include="PPR\SaveNofshonReservationNofeshPnimCoded.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PPR\AGetNofshonNirshamim.webtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="PPR\all1.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
