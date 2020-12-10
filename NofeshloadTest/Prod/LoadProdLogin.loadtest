@@ -2,8 +2,8 @@
 <LoadTest Name="LoadProdLogin" Description="" Owner="" storage="c:\testprojects\nofeshloadtestppr2\nofeshloadtest\prod\loadprodlogin.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Run Settings1" Id="9d4ecab7-2746-416e-8852-683a2c7a0da1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Scenarios>
     <Scenario Name="Scenario1" DelayBetweenIterations="0" PercentNewUsers="100" IPSwitching="true" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
-      <ThinkProfile Value="0.2" Pattern="Off" />
-      <LoadProfile Pattern="Step" InitialUsers="1" MaxUsers="20" StepUsers="1" StepDuration="10" StepRampTime="0" />
+      <ThinkProfile Value="0.2" Pattern="On" />
+      <LoadProfile Pattern="Step" InitialUsers="3" MaxUsers="50" StepUsers="3" StepDuration="10" StepRampTime="0" />
       <TestMix>
         <TestProfile Name="WebProdLogin1" Path="webprodlogin1.webtest" Id="5e0f5c9c-317d-4b0a-82b2-24e2678af5ef" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>

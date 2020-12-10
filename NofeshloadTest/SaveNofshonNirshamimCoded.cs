@@ -51,7 +51,7 @@ namespace NofeshloadTest
             request1.Headers.Add(new WebTestRequestHeader("Accept", "application/json, text/plain, */*"));
             request1.Headers.Add(new WebTestRequestHeader("Referer", "https://www5.tel-aviv.gov.il/Tlvirgunovdim/"));
             request1.Headers.Add(new WebTestRequestHeader("Authorization", ("Bearer " + this.Context["access_token"].ToString())));
-
+            request1.ValidateResponse += new EventHandler<ValidationEventArgs>(Validate);
             StringHttpBody request1Body = new StringHttpBody();
             request1Body.ContentType = "application/json";
             request1Body.InsertByteOrderMark = false;
@@ -60,6 +60,16 @@ namespace NofeshloadTest
             request1.Body = request1Body;
             yield return request1;
             request1 = null;
+        }
+
+        private void Validate(object sender, ValidationEventArgs e)
+        {
+            if (!e.Response.BodyString.Contains("isSuccess\":true"))
+            {
+                e.IsValid = false;
+
+            }
+
         }
     }
 }

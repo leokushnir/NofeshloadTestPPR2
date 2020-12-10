@@ -49,13 +49,14 @@ namespace NofeshloadTest
             request1.Headers.Add(new WebTestRequestHeader("Accept", "application/json, text/plain, */*"));
             request1.Headers.Add(new WebTestRequestHeader("Referer", "https://www5.tel-aviv.gov.il/Tlvirgunovdim/"));
             request1.Headers.Add(new WebTestRequestHeader("Authorization", ("Bearer " + this.Context["access_token"].ToString())));
+            request1.ValidateResponse += new EventHandler<ValidationEventArgs>(Validate);
             StringHttpBody request1Body = new StringHttpBody();
             request1Body.ContentType = "application/json";
             request1Body.InsertByteOrderMark = true;
 
             var bs = "{\"nofesh_id\":ID, \"ms_zehut_mazmin\":TZ, \"ms_amitim\":1, \"ms_nilvim\":0, \"ms_yeladim\"" +
-            ":0, \"ms_tinokot\":0, \"isTwoKidsSeperateRoom\":false, \"isFamilyRoom\":false, \"isThre" +
-            "eKidsSeperateRoom\":false,\"ms_chadarim\":1, \"mechir_le_nofesh\":0}";
+            ":0, \"ms_tinokot\":0, \"isTwoKidsSeperateRoom\":false,  \"isDeletMekasheret \":false,\"isFamilyRoom\":false, \"isThre" +
+            "eKidsSeperateRoom\":false,\"ms_chadarim\":1, \"mechir_le_nofesh\":0,}";
             bs = bs.Replace("ID", this.Context["dataNofesh.dataNofashim#txt.id_nofesh"].ToString());
             bs = bs.Replace("TZ", this.Context["dataNofesh.dataNofashim#txt.user"].ToString());
 
@@ -64,6 +65,17 @@ namespace NofeshloadTest
             request1.Body = request1Body;
             yield return request1;
             request1 = null;
+        }
+
+        private void Validate(object sender, ValidationEventArgs e)
+        {
+            if (!e.Response.BodyString.Contains("status\":true"))
+            {
+                e.IsValid = false;
+                
+            }
+
+            
         }
     }
 }
